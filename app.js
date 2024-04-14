@@ -19,7 +19,7 @@ const people =[
 
 
 app.get('/', (req, res) => {
-  
+  // the map method is used to create a new array with the results of calling a provided function on every element in the calling array
   res.send(people.map(person => person.name).join(', '));
 })
 app.post('/api/customer', (req, res) => {
